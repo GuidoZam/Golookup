@@ -9,6 +9,10 @@ func main() {
 	fmt.Println(stringArray[0], stringArray[1])
 	fmt.Println(stringArray)
 
+	// You can skip the array size
+	r := []int{ 1, 2, 3, 4, 5}
+	fmt.Println(r)
+
 	fibonacciArray := [9]int{ 1, 1, 2, 3, 5, 8, 13, 21, 34 }
 	fmt.Println(fibonacciArray)
 
