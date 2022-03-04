@@ -26,6 +26,13 @@ func main() {
 	// Drop its first two values
 	s = primes[2:]
 	printSlice(s)
+
+	// Nil values
+	var z []int
+	fmt.Println(z, len(z), cap(z))
+	if z == nil {
+		fmt.Println("z is nil!")
+	}
 }
 
 func printSlice(s []int) {
