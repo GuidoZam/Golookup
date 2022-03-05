@@ -9,4 +9,15 @@ func main() {
 	for index, value := range source {
 		fmt.Printf("source[%d] = %d\n", index, value)
 	}
+
+	pow := make([]int, 10)
+	// You can avoid the declaration of the value
+	for i := range pow {
+		pow[i] = 1 << uint(i) // == 2**i
+	}
+
+	// You can avoid the declaration of the index
+	for _, value := range pow {
+		fmt.Printf("%d\n", value)
+	}
 }
