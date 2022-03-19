@@ -30,7 +30,7 @@ func (d Duck) Speak() string {
 }
 
 func main() {
-	animals := []Animal{Dog{}, Cat{}, Duck{}}
+	animals := []Animal{Dog{}, new(Cat), Duck{}}
     for _, animal := range animals {
         fmt.Println(animal.Speak())
     }
