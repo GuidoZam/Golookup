@@ -31,7 +31,7 @@ func infiniteForLoop() {
 	sum := 1
 	for {
 		sum += sum
-		if(sum > 1000) {
+		if (sum > 1000) {
 			fmt.Println(sum)
 			return
 		}
