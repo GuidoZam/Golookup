@@ -11,7 +11,8 @@ type Cat struct {
 func findType(i interface{}) {  
     switch i.(type) {
     case string:
-        fmt.Printf("I'm a string! My value is '%s'\n", i.(string))
+        // type conversion is not necessary
+        fmt.Printf("I'm a string! My value is '%s'\n", i)
     case int:
         fmt.Printf("I'm an int! My value is %d\n", i.(int))
 	case Cat:
