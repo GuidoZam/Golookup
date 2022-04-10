@@ -28,18 +28,19 @@ func Same(t1, t2 *tree.Tree) bool {
     go Walk(t2, ch2)
     for k := range ch1 {
         select {
-        case g := <-ch2:
-            if k != g {
-                return false
-            }
-        default:
-            break
+			case g := <-ch2:
+				if k != g {
+					return false
+				}
+			default:
+				break
         }
     }
     return true
 }
 
 func main() {
+	fmt.Println(tree.New(1))
     fmt.Println(Same(tree.New(1), tree.New(1)))
     fmt.Println(Same(tree.New(1), tree.New(2)))
 }
