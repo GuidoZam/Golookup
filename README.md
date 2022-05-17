@@ -2,6 +2,12 @@
 
 A collection of examples while following the [go.dev tour](https://go.dev/tour/) and personal curiosity.
 
+## Usage
+
+```
+go run go_file.go
+```
+
 ## List of examples
 
 - 001 - [ImportsAndFunctions](./001-ImportsAndFunctions/main.go)
